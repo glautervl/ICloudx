@@ -42,10 +42,7 @@ function initializeApp(){
     width: width,
     height: height,
     webPreferences: {
-      // partition: 'persist:sitePoller',
-      // nodeIntegration: true,
       spellcheck: true
-
     }
   });
 
@@ -58,6 +55,7 @@ function initializeApp(){
     contextMenu.popup();
   });
   win.setBrowserView(view);
+  win.removeMenu();
 
   view.setBounds({ x: 0, y: 0, width: win.getContentBounds().width, height: win.getContentBounds().height });
 
