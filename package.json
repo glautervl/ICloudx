@@ -1,10 +1,9 @@
 {
   "name": "IcloudX",
   "version": "0.0.1",
+  "Author": "Glauter Lemos",
   "description": "ICloudX App",
   "main": "main.js",
-  "Authors": "Glauter Lemos",
-
   "build": {
     "appId": "your.id",
     "mac": {
