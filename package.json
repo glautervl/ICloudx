@@ -2,6 +2,7 @@
   "name": "IcloudX",
   "version": "0.0.1",
   "Author": "Glauter Lemos",
+  "Authors": "Glauter Lemos",
   "description": "ICloudX App",
   "main": "main.js",
   "build": {
