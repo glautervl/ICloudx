@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "Author": "Glauter Lemos",
   "Authors": "Glauter Lemos",
-  "description": "ICloudX App",
+  "description": "ICloud for Linux",
   "main": "main.js",
   "build": {
     "appId": "your.id",
