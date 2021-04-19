@@ -1,12 +1,22 @@
 {
   "name": "IcloudX",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "ICloudX App",
   "main": "main.js",
+  "Authors": "Glauter Lemos",
+
+  "build": {
+    "appId": "your.id",
+    "mac": {
+      "category": "your.app.category.type"
+    }
+  },
   "scripts": {
     "start": "electron-forge start",
     "package": "electron-forge package",
-    "make": "electron-forge make"
+    "make": "electron-forge make",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
   },
   "keywords": [],
   "author": "",
@@ -17,7 +27,8 @@
     "@electron-forge/maker-rpm": "^6.0.0-beta.54",
     "@electron-forge/maker-squirrel": "^6.0.0-beta.54",
     "@electron-forge/maker-zip": "^6.0.0-beta.54",
-    "electron": "^12.0.1"
+    "electron": "^12.0.1",
+    "electron-builder": "^22.10.5"
   },
   "dependencies": {
     "electron-squirrel-startup": "^1.0.0"
