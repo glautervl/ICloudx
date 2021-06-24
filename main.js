@@ -1,4 +1,7 @@
-const { app, BrowserWindow, BrowserView, Menu, remote } = require('electron')
+const { nativeImage, app, BrowserWindow, BrowserView, Menu, remote } = require('electron');
+const path = require('path');
+
+// const icon = require('assets/icons/icloud-64x64.png');
 
 // Building context menu
 let template = [
@@ -33,6 +36,9 @@ function initializeApp(){
   const width = 960;
   const height = 600;
 
+  console.log("PATHHHHHHHHHHHH ==================");
+  console.log(path.join(__dirname, 'assets/icons/icloud-64x64.png'));
+
   /**
    * BorwserWindow Settings
    * @type {Electron.BrowserWindow}
@@ -41,6 +47,7 @@ function initializeApp(){
     show: true,
     width: width,
     height: height,
+    icon: path.join(__dirname, 'assets/icons/icloud-64x64.png'),
     webPreferences: {
       spellcheck: true
     }

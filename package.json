@@ -25,6 +25,28 @@
   "dependencies": {
     "electron-squirrel-startup": "^1.0.0"
   },
+  "build": {
+    "directories": {
+      "buildResources": "public"
+    },
+    "appId": "dev.glauter.icloudx",
+    "productName": "MyApp",
+    "copyright": "Copyright © 2019",
+    "mac": {
+      "icon": "/icons/icon.png",
+      "category": "public.app-category.utilities"
+    },
+    "win": {
+      "icon": "/icons/icon.png"
+    },
+    "files": [
+      "./build/**/*",
+      "./dist/**/*",
+      "./node_modules/**/*",
+      "./public/**/*",
+      "*.js"
+    ]
+  },
   "config": {
     "forge": {
       "packagerConfig": {},
